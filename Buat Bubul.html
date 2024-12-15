@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Ucapan Ulang Tahun</title>
+    <link href="" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #f8d0d0; /* Soft Pink Background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            background-position: 10% 10%, 80% 10%; /* Balon kiri dan kanan */
+        }
+        .card {
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            font-family: 'trebuchet', sans-serif;
+            color: #4caf50;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            font-family: 'arial', sans-serif;
+        }
+        button {
+            background-color: #ff79c6;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #ff58a5;
+        }
+        .teddy-bear {
+            position: absolute;
+            bottom: 250px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+        }
+	.balon1 {
+	    position: absolute;
+	    bottom: 50px;
+	    left: -70px;
+	    transform: translateX(-50%);
+	    widht: 0px;
+	    height: 270px
+	}
+	.balon2 {
+	    position: absolute;
+	    bottom: 50px;
+	    left: 430px;
+	    transform: translateX(-50%);
+	    widht: 0px;
+	    height: 270px
+	}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Selamat Ulang Tahun Cantikku!</h1>
+        <p>Selamat Ulang Tahun bebeb Acuu, yeeeyyy bebeb ultah. selamat yaa bebee.</p>
+        <button id="birthdayButton" onclick="changeMessage()">Selamat 21 Tahun bebkuu!</button>
+        <img class="teddy-bear" src="https://png.pngtree.com/png-vector/20240419/ourmid/pngtree-birthday-teddy-bear-with-gifts-png-image_12298357.png" alt="Teddy Bear">
+	<img class="balon1" src="https://i.pinimg.com/originals/ad/9f/4d/ad9f4d558442182d434aaa513d7a2a67.png" alt="Balon">
+	<img class="balon2" src="https://i.pinimg.com/originals/ad/9f/4d/ad9f4d558442182d434aaa513d7a2a67.png" alt="Balon">
+    </div>
+
+	<script>
+            function changeMessage() {
+            	let message = document.querySelector('p');
+            	message.textContent = "Semoga sehat terus, panjang umur, semakin sukses dan bahagia selalu! ^^";
+		
+		var button = document.getElementById('birthdayButton');
+		button.textContent = 'Wish You All The Best'; // Change button text
+
+		button.onclick = function() {
+		    message.textContent = "Semoga cepat dapat kerja dan dapat beasiswa S2, banyak duit biar bisa jajan, krucil sehat juga!"; // New message in the card
+		    button.textContent = 'Nanti hadiahnya dipake ya beb ><'; // Optionally change the button text again
+		    
+		    button.onclick = function() {
+			message.textContent = "Loh dipencet lagi, cari apa bebebul?? Yasuda kalo gitu pencet lagi"; // New message in the card
+			button.textContent = 'Semangat terus bebebulku'; 
+			
+			button.onclick = function() {
+		    	    message.textContent = "Timakacii yaa bub dah mau temenin akuu, aku juga temenin bub kok ^^"; // New message in the card
+		    	    button.textContent = 'maaf yaa bubul kalo kurang menarik hadiahnya';
+
+			    button.onclick = function() {
+		    		message.textContent = "Tenang jaa, walau dah dewasa bub boleh kayak anak kecil denganku"; // New message in the card
+		    		button.textContent = 'main yg banyak kita wkwk';
+				button.onclick = function() {
+		    		    message.textContent = "nanti kita main funworld lagi, jajan lagi, nonton? klo mau, jalan2 juga"; // New message in the card
+		    		    button.textContent = 'Tenang jaa yaa bubul';
+				    button.onclick = function() {
+		    			message.textContent = "Maaf ya bub aku banyak kurangnya, aku mau bub bahagia terus"; // New message in the card
+		    			button.textContent = 'Aku sayang bubull banyak banyak';
+
+					button.onclick = function() {
+		    			    message.textContent = "Udah atuh, aku bingung mau bilang apalagi, soalnya bubul dah ..."; // New message in the card
+		    			    button.textContent = 'udah apa hayooo...';
+					    button.onclick = function() {
+		    				message.textContent = "Cantik, baik, pengertian, pintar, lucu, gemes, mantaplah pokoknyaa. banyak first time ku dengan bub"; // New message in the card
+		    				button.textContent = 'last yaa...';
+						
+						button.onclick = function() {
+		    				    message.textContent = "Login yok, Pusreng kita. berubahlah menjadi Starstruck kita rayakan di Land of Dawn"; // New message in the card
+		    				    button.textContent = 'Adalagi deh';
+						    button.onclick = function() {
+		    					message.textContent = "Maaf ya bub kalo kurang bagus. Semoga bub bahagia teruss dan dimudahkan semua urusannya."; // New message in the card
+		    					button.textContent = 'veryy last';
+
+							button.onclick = function() {
+		    					    message.innerHTML = "Love you banyak banyak bubull. Selamat Ulang Tahun My lover. <br> Naila Nabiha Qonita"; // New message in the card
+		    					    button.textContent = 'Timakaci dah klik sampe ujung';
+			
+							    button.onclick = function() {
+		    					        message.innerHTML = "お誕生日おめでとう <br> 生日快乐 <br> С днём рождения! <br> Joyeux Anniversaire <br> Happy Birthday"; // New message in the card
+		    					        button.remove();
+								};
+							    };
+							};
+						    };
+						};
+					    };
+					};
+				    };
+				};
+			    }; 
+			};
+		};
+	   }
+    </script>
+
+</body>
+</html>
